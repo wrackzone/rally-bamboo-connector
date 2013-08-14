@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?> 
+<bamboo-rally-notifier>
+   <service>
+      <!-- INFO|DEBUG|WARN|ERROR|FATAL -->
+      <log-level>
+          INFO 
+      </log-level>
+      <!-- path to filename -->
+      <log-file>
+          sva-sample.log 
+      </log-file>
+      <!-- in minutes -->
+      <interval>
+          3 
+      </interval>
+   </service>
+   <rally>
+      <!-- https://rally1.rallydev.com/slm -->
+      <server>
+          https://rally1.rallydev.com/slm 
+      </server>
+      <!-- paul@acme.com -->
+      <user>
+          barry
+      </user>
+      <password>
+          
+      </password>
+   </rally>
+   <bamboo>
+      <!-- http://localhost:8085/rest/api/latest/ -->
+      <url>
+          http://10.244.181.113:8085/rest/api/latest/ 
+      </url>
+      <user>
+          angelone
+      </user>
+      <password>
+          Password
+      </password>
+   </bamboo>
+   <projects>
+   	  <!-- setup a project element for each bamboo project -->
+      <project>
+         <bamboo-project>
+             TESTSVA 
+         </bamboo-project>
+         <bamboo-plan>
+             CU
+         </bamboo-plan>
+         <rally-workspace>
+             User Story Pattern 
+         </rally-workspace>
+         <rally-project>
+             Shopping Team 
+         </rally-project>
+         <last-build>
+            14
+         </last-build>
+      </project>
+   </projects>
+</bamboo-rally-notifier>
