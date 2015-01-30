@@ -9,7 +9,7 @@
       <log-file>
           sva-sample.log 
       </log-file>
-      <!-- in minutes -->
+      <!-- in seconds -->
       <interval>
           3 
       </interval>
