@@ -34,14 +34,14 @@ class BambooProject
 	end
 
 	def latest_build 
-#			url = @url + "result/"+@project+"-"+@plan+"/latest"
-			url = @url + "build/"+@project+"-"+@plan+"/latest"
+			url = @url + "result/"+@project+"-"+@plan+"/latest"
+			# url = @url + "build/"+@project+"-"+@plan+"/latest"
 			get_build(url)
 	end
 	
 	def specific_build(number)
-#			url = @url + "result/"+@project+"-"+@plan+"/"+number
-			url = @url + "build/"+@project+"-"+@plan+"/"+number
+			url = @url + "result/"+@project+"-"+@plan+"/"+number
+			# url = @url + "build/"+@project+"-"+@plan+"/"+number
 			get_build(url)
 	end
 

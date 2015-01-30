@@ -10,6 +10,8 @@ class Notifier
 	@doc = nil
 
 	def initialize(doc,filename,logger)
+
+		logger.info("notifier:initiatlize:" + filename )
 	
 		@filename = filename
 		@doc = doc
@@ -102,6 +104,7 @@ class Notifier
 		
 			bamboo_project = project.elements["bamboo-project"].text.strip
 			bamboo_plan    = project.elements["bamboo-plan"].text.strip
+			@logger.info("bamboo-project = " + bamboo_project + " bamboo-plan = " + bamboo_plan)
 			# def initializer(url, user, password, project, plan,logger)
 			bp = BambooProject.new( @bamboo_url, 
 									@bamboo_user, 
@@ -112,9 +115,10 @@ class Notifier
 			
 			# last build from config
 			last_run_build = project.elements["last-build"].text.strip.to_i
+			@logger.info("last-run from config file = " + last_run_build.to_s)
 			# last build from bamboo
 			latest = bp.latest_build
-
+			@logger.info("latest from bamboo = " + latest.build_number.to_s)
 			# if there is at least one build
 			if latest.build_number.to_i > 0 
 				# if no last_run_build in config file then just run for latest.
