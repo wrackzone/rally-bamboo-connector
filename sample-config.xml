@@ -30,32 +30,32 @@
    <bamboo>
       <!-- http://localhost:8085/rest/api/latest/ -->
       <url>
-          http://10.244.181.113:8085/rest/api/latest/ 
+          http://<host or ip>:<port>/rest/api/latest/ 
       </url>
       <user>
-          angelone
+          username
       </user>
       <password>
-          Password
+          password
       </password>
    </bamboo>
    <projects>
    	  <!-- setup a project element for each bamboo project -->
       <project>
          <bamboo-project>
-             TESTSVA 
+             PROJKEY 
          </bamboo-project>
          <bamboo-plan>
-             CU
+             PLANKEY
          </bamboo-plan>
          <rally-workspace>
-             User Story Pattern 
+             Workspace Name
          </rally-workspace>
          <rally-project>
-             Shopping Team 
+             Project Name
          </rally-project>
          <last-build>
-            14
+            1
          </last-build>
       </project>
    </projects>
