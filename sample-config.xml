@@ -11,7 +11,7 @@
       </log-file>
       <!-- in seconds -->
       <interval>
-          3 
+          300 
       </interval>
    </service>
    <rally>
