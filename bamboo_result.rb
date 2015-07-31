@@ -1,8 +1,6 @@
 require 'rexml/document'
 require 'logger'
 
-# curl --user bmullan:6keyserv http://localhost:8085/rest/api/latest/result/SAMPLE-DEF/latest?expand=changes.change
-
 class BambooResult
 
 	def initialize(xml)
