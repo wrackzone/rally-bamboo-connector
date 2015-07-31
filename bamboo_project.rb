@@ -2,8 +2,6 @@ require 'rest_client'
 require 'logger'
 require './bamboo_result'
 
-# curl --user bmullan:6keyserv http://localhost:8085/rest/api/latest/result/SAMPLE-DEF/latest?expand=changes.change
-
 class BambooProject
 
 	def initialize(url, user, password, project, plan,logger)
