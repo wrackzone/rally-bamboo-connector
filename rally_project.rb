@@ -112,9 +112,3 @@ class RallyProject
 	end
 
 end
-
-
-#rp = RallyProject.new("https://demo.rallydev.com/slm", "bmullan@rallydev.com", "Just4Rally", "User Story Pattern","Shopping Team",nil)
-#bd =  rp.find_or_create_build_definition( "SAMPLE-DEF" )
-#b = rp.create_build( bd, 100, "build message","1", DateTime.now, "SUCCESS","http://localhost:8085/browse/SAMPLE-DEF-11")
-#pp b
