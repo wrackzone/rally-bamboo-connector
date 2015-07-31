@@ -2,7 +2,7 @@ require 'logger'
 require 'rally_rest_api'
 require 'date'
 
-# curl --user bmullan:6keyserv http://localhost:8085/rest/api/latest/result/SAMPLE-DEF/latest?expand=changes.change
+# curl --user bmullan:<password> http://localhost:8085/rest/api/latest/result/SAMPLE-DEF/latest?expand=changes.change
 
 class RallyProject
 
